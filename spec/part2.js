@@ -58,7 +58,8 @@
       it('should return false given an array and a value not in that array', function() {
         // Replace this line with an `expect` statement that tests
         // the behavior described by the `it` string
-        throw new Error('This test is missing.');
+        expect(_.contains([1, 2, 3], 5)).to.be.false;
+
       });
 
       it('should return true given a object and a value from that object', function() {
@@ -92,6 +93,7 @@
         // Replace this line with an `expect` statement that tests
         // the behavior described by the `it` string
         throw new Error('This test is missing.');
+        // expect(_.every([ , null], _.identity)).to.be.false;
       });
 
       it('fails for a collection containing mixed falsy and truthy values', function() {
